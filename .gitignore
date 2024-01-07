@@ -149,3 +149,5 @@ vite.config.ts.timestamp-*
 
 
 .idea/
+.turbo/
+build/
