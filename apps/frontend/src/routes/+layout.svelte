@@ -12,4 +12,9 @@
 	:global(body) {
 		font-family: 'Urbanist Variable', sans-serif;
 	}
+
+	:global(h2) {
+		font-weight: 600;
+		font-style: italic;
+	}
 </style>

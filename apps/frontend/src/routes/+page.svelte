@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Avatar from '$lib/components/Avatar.svelte';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import Sheet from '$lib/components/Sheet.svelte';
 	import { Badge } from '$lib/components/ui/badge';
@@ -6,15 +7,11 @@
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import {
 		AppWindow,
-		BrandAngular,
 		BrandAws,
 		BrandGithub,
 		BrandGolang,
 		BrandHtml5,
-		BrandJavascript,
 		BrandLinkedin,
-		BrandMongodb,
-		BrandNextjs,
 		BrandPython,
 		BrandSupabase,
 		BrandSvelte,
@@ -23,7 +20,6 @@
 		BrandVue,
 		Calendar,
 		Coffee,
-		HexagonLetterC,
 		HexagonLetterN,
 		Leaf,
 		Mail,
@@ -34,6 +30,7 @@
 		SquareLetterN
 	} from '@steeze-ui/tabler-icons';
 	import { Timeline, TimelineItem } from 'flowbite-svelte';
+	import avatarImg from '$lib/assets/avatar.jpg';
 
 	let projects = [
 		{
@@ -107,7 +104,7 @@
 				'Collection of Telegram Bots maded by a telegram group, built in NestJS with Supabase Postgres Database.',
 			technologies: [
 				{ icon: SquareLetterN, color: 'pink', name: 'NestJS' },
-				{ icon: BrandSupabase, color: 'orange', name: 'Supabase' },
+				{ icon: BrandSupabase, color: 'green', name: 'Supabase' },
 				{ icon: Sql, color: 'neutral', name: 'Supabase PostgreSQL' }
 			],
 			link: 'https://gitlab.com/fcc-coffee/nestjs-bots'
@@ -115,7 +112,8 @@
 		{
 			title: 'Quasar Form-Modal',
 			description: 'Front-End Component',
-			content: 'Modal component with a customizable form, provide the formFields, formData and submit function. (In progress)',
+			content:
+				'Modal component with a customizable form, provide the formFields, formData and submit function. (In progress)',
 			technologies: [
 				{ icon: Settings, color: 'blue', name: 'Quasar Framework' },
 				{ icon: BrandTailwind, color: 'teal', name: 'Tailwind' }
@@ -125,12 +123,14 @@
 	];
 </script>
 
-<div class="w-90% mx-auto sm:w-full px-5 lg:px-0">
+<div class="w-90% mx-auto px-5 sm:w-full lg:px-0">
 	<div class="fixed right-5 top-3">
 		<Sheet />
 	</div>
 	<section class="mx-auto mt-40 max-w-2xl">
-		<h1 class="text-3xl md:text-5xl font-bold">Hey, I'm Henrry</h1>
+		<h1 class="flex items-center gap-x-2 text-3xl font-bold md:text-5xl">
+			<Avatar src={avatarImg} />Hey, I'm Henrry
+		</h1>
 		<p class="my-2 max-w-[45ch] text-base md:text-lg">
 			<span class="text-red-500 dark:text-red-300">+1 year of experience.</span>
 			<span>Fullstack developer and content creator.</span>
@@ -138,7 +138,7 @@
 				>Specialized in Back-End applications and PENS Stack</span
 			>
 		</p>
-		<div class="flex justify-start gap-3 flex-wrap">
+		<div class="flex flex-wrap justify-start gap-3">
 			<Badge variant="default" class="bg-blue-400">PostgreSQL</Badge>
 			<Badge variant="default" class="bg-slate-500">Express.js</Badge>
 			<Badge variant="default" class="bg-red-400">NestJS</Badge>
@@ -146,7 +146,7 @@
 		</div>
 		<Separator class="my-3 max-w-xl" />
 		<p class="my-1 mb-2 text-lg">Contact me</p>
-		<div class="flex justify-start flex-wrap gap-2">
+		<div class="flex flex-wrap justify-start gap-2">
 			<Badge variant="outline">
 				<a
 					class="flex gap-x-2 text-neutral-600 transition-colors hover:text-neutral-300"
@@ -176,76 +176,81 @@
 			</Badge>
 		</div>
 	</section>
-	<section class="mx-auto my-3 max-w-2xl lg:max-w-5xl">
-		<h2 class="text-2xl max-w-2xl mx-auto">Skills</h2>
-		<div class="p-2 grid gap-2 grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+	<section class="mx-auto my-3 max-w-2xl">
+		<h2 class="mx-auto max-w-2xl text-2xl md:text-3xl">Skills</h2>
+		<div class="grid grid-cols-2 gap-2 p-2 sm:grid-cols-4 md:grid-cols-6">
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandPython} class="h-20 w-20"/> Python
+				<Icon
+					src={BrandPython}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> Python
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={Pepper} class="h-20 w-20"/> Flask
+				<Icon
+					src={ServerBolt}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> FastAPI
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={ServerBolt} class="h-20 w-20"/> FastAPI
+				<Icon
+					src={BrandGolang}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> Go
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandGolang} class="h-20 w-20"/> Go
+				<Icon
+					src={BrandTypescript}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> TypeScript
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandTypescript} class="h-20 w-20"/> TypeScript
+				<Icon
+					src={BrandSvelte}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> SvelteKit
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandJavascript} class="h-20 w-20"/> JavaScript
+				<Icon
+					src={BrandVue}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> Vue
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandSvelte} class="h-20 w-20"/> SvelteKit
+				<Icon
+					src={Settings}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> Quasar
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandVue} class="h-20 w-20"/> Vue
+				<Icon
+					src={HexagonLetterN}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> Node.js
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={Settings} class="h-20 w-20"/> Quasar
+				<Icon
+					src={SquareLetterN}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> NestJS
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandNextjs} class="h-20 w-20"/> Next.js
+				<Icon
+					src={Coffee}
+					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+				/> Java
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={HexagonLetterN} class="h-20 w-20"/> Node.js
+				<Icon src={Leaf} class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300" />
+				Spring Boot
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={SquareLetterN} class="h-20 w-20"/> NestJS
-			</p>
-			<p class="flex flex-col items-center justify-center">
-				<Icon src={Coffee} class="h-20 w-20"/> Java
-			</p>
-			<p class="flex flex-col items-center justify-center">
-				<Icon src={AppWindow} class="h-20 w-20"/> JavaFX
-			</p>
-			<p class="flex flex-col items-center justify-center">
-				<Icon src={Leaf} class="h-20 w-20"/> Spring Boot
-			</p>
-			<p class="flex flex-col items-center justify-center">
-				<Icon src={HexagonLetterC} class="h-20 w-20"/> C++
-			</p>
-			<p class="flex flex-col items-center justify-center">
-				<Icon src={Sql} class="h-20 w-20"/> PL/PGSQL
-			</p>
-			<p class="flex flex-col items-center justify-center">
-				<Icon src={Sql} class="h-20 w-20"/> SQL
-			</p>
-			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandMongodb} class="h-20 w-20"/> NoSQL
-			</p>
-			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandAngular} class="h-20 w-20"/> Angular
-			</p>
-			<p class="flex flex-col items-center justify-center">
-				<Icon src={BrandSupabase} class="h-20 w-20"/> Supabase
+				<Icon src={Sql} class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300" /> SQL
+				& NoSQL
 			</p>
 		</div>
 	</section>
 	<section id="experience" class="mx-auto mt-10 max-w-2xl">
-		<h2 class="text-2xl">Experience</h2>
+		<h2 class="text-2xl md:text-3xl">Experience</h2>
 
 		<Timeline order="vertical" class="my-8 max-w-[65ch]">
 			<TimelineItem title="Developer at Linktic" date="December 5, 2022 - Current">
@@ -284,16 +289,27 @@
 		</Timeline>
 	</section>
 	<section id="projects" class="mx-auto mt-10">
-		<h2 class="text-2xl max-w-2xl mx-auto">Projects</h2>
-		<div class="my-3 max-w-3xl lg:max-w-5xl mx-auto grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+		<h2 class="mx-auto max-w-2xl text-2xl md:text-3xl">Projects</h2>
+		<div class="mx-auto my-3 grid max-w-3xl gap-2 sm:grid-cols-2 lg:max-w-5xl lg:grid-cols-3">
 			{#each projects as { title, content, description, technologies, link }}
-				<div class="w-full h-full">
+				<div class="h-full w-full">
 					<ProjectCard {title} {content} {description} {technologies} {link} />
 				</div>
 			{/each}
 		</div>
 	</section>
-	<section id="experience" class="mx-auto mt-10 max-w-xl">
-		<h2 class="text-2xl">About Me</h2>
+	<section id="about" class="mx-auto mt-10 max-w-4xl">
+		<h2 class="text-2xl md:text-3xl max-w-2xl mx-auto">About Me</h2>
+		<div class="flex flex-col-reverse items-center justify-between md:flex-row p-2">
+			<p class="text-lg">
+				I am a highly adaptable professional, with an exceptional ability to learn and master new
+				technologies and work methods. I excel in dynamic and constantly changing environments,
+				always keeping up to date with the latest industry trends. I possess strong teamwork and
+				excellent communication skills, which are crucial to collaborate effectively on complex
+				projects. My proactive approach and creative solutions to challenges make me a valuable
+				asset to any team looking to innovate and advance their goals.
+			</p>
+			<img src={avatarImg} alt="Img" class="w-1/2 md:w-1/3 p-5 rounded-full" />
+		</div>
 	</section>
 </div>
