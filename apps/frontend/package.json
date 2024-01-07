@@ -12,6 +12,7 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@steeze-ui/tabler-icons": "^2.1.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-node": "^2.0.2",
 		"@sveltejs/kit": "^2.0.0",
@@ -23,6 +24,8 @@
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
+		"flowbite": "^2.2.1",
+		"flowbite-svelte": "^0.44.21",
 		"postcss": "^8.4.32",
 		"postcss-load-config": "^5.0.2",
 		"prettier": "^3.1.1",
@@ -38,11 +41,12 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/urbanist": "^5.0.19",
+		"@steeze-ui/svelte-icon": "^1.5.0",
 		"axios": "^1.6.5",
 		"bits-ui": "^0.13.2",
 		"clsx": "^2.1.0",
 		"cmdk-sv": "^0.0.12",
-		"lucide-svelte": "^0.306.0",
 		"mode-watcher": "^0.1.2",
 		"svelte-sonner": "^0.3.10",
 		"tailwind-merge": "^2.2.0",
