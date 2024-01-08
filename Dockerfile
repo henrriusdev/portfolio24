@@ -8,10 +8,7 @@ WORKDIR /app
 RUN npm install -g @nestjs/cli
 
 # Copia los archivos de configuración de Yarn y workspaces
-COPY package.json yarn.lock .yarnrc.yml ./
-
-# Instala Yarn globalmente y copia los archivos de configuración de Yarn
-COPY .yarn ./.yarn
+COPY package.json yarn.lock ./
 
 # Instala las dependencias de nivel de raíz
 RUN yarn install --immutable --inline-builds
