@@ -5,7 +5,7 @@ FROM node:20 AS builder
 WORKDIR /app
 
 # Instala la CLI de NestJS globalmente
-RUN npm install -g @nestjs/cli
+RUN npm install -g @nestjs/cli cross-env
 
 # Copia los archivos de configuración de Yarn y workspaces
 COPY package.json yarn.lock ./
