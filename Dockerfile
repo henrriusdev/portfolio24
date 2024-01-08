@@ -10,16 +10,14 @@ RUN npm install -g @nestjs/cli
 # Copia los archivos de configuración de Yarn y workspaces
 COPY package.json yarn.lock ./
 
-# Instala las dependencias de nivel de raíz
-RUN yarn install --immutable --inline-builds
 
 # Copia los archivos de los workspaces y sus dependencias
 COPY apps/backend/package.json ./apps/backend/
 COPY apps/frontend/package.json ./apps/frontend/
 # Añadir más líneas de COPY si tienes más workspaces
 
-# Instala las dependencias de cada workspace
-RUN yarn workspaces focus --all
+# Instala las dependencias de nivel de raíz
+RUN yarn install --immutable --inline-builds
 
 # Copia el resto del código fuente
 COPY . .
