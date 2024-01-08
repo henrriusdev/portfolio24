@@ -876,7 +876,7 @@
     focus-trap "^7.5.2"
     nanoid "^4.0.2"
 
-"@nestjs/cli@^10.0.0":
+"@nestjs/cli@^10.2.1":
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-10.2.1.tgz#a1d32c28e188f0fb4c3f54235c55745de4c6dd7f"
   integrity sha512-CAJAQwmxFZfB3RTvqz/eaXXWpyU+mZ4QSqfBYzjneTsPgF+uyOAW3yQpaLNn9Dfcv39R9UxSuAhayv6yuFd+Jg==
