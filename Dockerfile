@@ -4,13 +4,25 @@ FROM node:20 AS builder
 # Define el directorio de trabajo
 WORKDIR /app
 
-# Copia los archivos necesarios para la instalación de dependencias
-COPY package.json yarn.lock ./
+# Instala la CLI de NestJS globalmente
+RUN npm install -g @nestjs/cli
 
-RUN npm install -g @nestjs/cli vite
+# Copia los archivos de configuración de Yarn y workspaces
+COPY package.json yarn.lock .yarnrc.yml ./
 
-# Instala las dependencias
+# Instala Yarn globalmente y copia los archivos de configuración de Yarn
+COPY .yarn ./.yarn
+
+# Instala las dependencias de nivel de raíz
 RUN yarn install --immutable --inline-builds
+
+# Copia los archivos de los workspaces y sus dependencias
+COPY apps/backend/package.json ./apps/backend/
+COPY apps/frontend/package.json ./apps/frontend/
+# Añadir más líneas de COPY si tienes más workspaces
+
+# Instala las dependencias de cada workspace
+RUN yarn workspaces focus --all
 
 # Copia el resto del código fuente
 COPY . .
