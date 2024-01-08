@@ -37,4 +37,4 @@ COPY --from=builder /app/apps/backend/dist ./apps/backend/dist
 COPY --from=builder /app/apps/frontend/build ./apps/frontend/build
 
 # Define el comando para ejecutar la aplicación
-CMD ["node", "./apps/backend/dist/main.js"]
+CMD ["cross-env", "NODE_ENV=production", "node", "./apps/backend/dist/main.js"]

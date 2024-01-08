@@ -1391,7 +1391,7 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.5.tgz#1ef302e01cf7d2b5a0fa526790c9123bf1d06690"
   integrity sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==
 
-"@types/node@*", "@types/node@^20.10.0", "@types/node@^20.3.1":
+"@types/node@*", "@types/node@^20.3.1":
   version "20.10.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.10.6.tgz#a3ec84c22965802bf763da55b2394424f22bfbb5"
   integrity sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==
@@ -2356,11 +2356,6 @@ commander@4.1.1, commander@^4.0.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.1.tgz#9fd602bd936294e9e9ef46a3f4d6964044b18068"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
-
-commander@^11.1.0:
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-11.1.0.tgz#62fdce76006a68e5c1ab3314dc92e800eb83d906"
-  integrity sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==
 
 commander@^2.20.0:
   version "2.20.3"
@@ -5660,15 +5655,6 @@ svelte@^4.2.7:
     locate-character "^3.0.0"
     magic-string "^0.30.4"
     periscopic "^3.1.0"
-
-svelxios@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/svelxios/-/svelxios-2.1.0.tgz#f44875f0c9d48559d2989366fcaa1f2f849d1abb"
-  integrity sha512-tMFJG/XZo7mi6yM1ilvlOVtKvk0Xm54nVpm2C+9rQsr5asNuVqZv35rQsHbF3pxM2mBd2pGWIe2gDyATXMTe+A==
-  dependencies:
-    "@types/node" "^20.10.0"
-    commander "^11.1.0"
-    ts-node "^10.9.1"
 
 svg.draggable.js@^2.2.2:
   version "2.2.2"
