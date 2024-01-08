@@ -7,6 +7,8 @@ WORKDIR /app
 # Copia los archivos necesarios para la instalación de dependencias
 COPY package.json yarn.lock ./
 
+yarn install -g nest
+
 # Instala las dependencias
 RUN yarn install --immutable --inline-builds
 
