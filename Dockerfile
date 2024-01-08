@@ -9,10 +9,6 @@ COPY package.json yarn.lock ./
 
 RUN npm install -g yarn@latest
 
-# Instala Yarn globalmente y copia los archivos de configuración de workspace
-COPY .yarn ./.yarn
-COPY .yarnrc.yml ./
-
 # Instala las dependencias
 RUN yarn install --immutable --inline-builds
 
