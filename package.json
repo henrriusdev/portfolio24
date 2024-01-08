@@ -9,12 +9,14 @@
     "apps/*"
   ],
   "scripts": {
-    "i": "yarn install",
     "dev": "turbo run dev --parallel",
     "dev:frontend": "turbo run dev --filter=frontend",
     "dev:backend": "turbo run dev --filter=backend",
     "build": "turbo run build --parallel",
     "build:frontend": "turbo run build --filter=frontend",
     "build:backend": "turbo run build --filter=backend"
+  },
+  "dependencies": {
+    "turbo": "^1.11.3"
   }
 }
