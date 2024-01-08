@@ -1,5 +1,5 @@
 # Etapa 1: Construcción
-FROM node:20 AS builder
+FROM node:18 AS builder
 
 # Define el directorio de trabajo
 WORKDIR /app
@@ -26,7 +26,7 @@ COPY . .
 RUN yarn build
 
 # Etapa 2: Ejecución
-FROM node:20-slim AS runner
+FROM node:18-slim AS runner
 
 # Define el directorio de trabajo
 WORKDIR /app
