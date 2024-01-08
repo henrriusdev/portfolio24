@@ -36,7 +36,5 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/apps/backend/dist ./apps/backend/dist
 COPY --from=builder /app/apps/frontend/build ./apps/frontend/build
 
-ENV NODE_ENV=production
-
 # Define el comando para ejecutar la aplicación
-CMD ["node", "./apps/backend/dist/main.js"]
+CMD ["yarn", "deploy"]

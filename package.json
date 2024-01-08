@@ -9,7 +9,7 @@
     "apps/*"
   ],
   "scripts": {
-    "deploy": "yarn install && cd ./apps/backend && yarn install && cd ../frontend && yarn install && cd ../.. && yarn build",
+    "deploy": "turbo run serve",
     "dev": "turbo run dev --parallel",
     "dev:frontend": "turbo run dev --filter=frontend",
     "dev:backend": "turbo run dev --filter=backend",
