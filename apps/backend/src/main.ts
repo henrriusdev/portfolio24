@@ -7,7 +7,7 @@ import { NextFunction } from 'express';
 async function importHandler() {
   const modulePath = '../../frontend/build/handler.js';
   const module = await import(modulePath);
-  return module;
+  return module.handler;
 }
 
 async function bootstrap() {
@@ -18,7 +18,7 @@ async function bootstrap() {
   let port = 3000;
   if (process.env.NODE_ENV === 'production') {
     port = 8080;
-    const handler = (await importHandler()).handler;
+    const handler = await importHandler();
 
     app.use((req: Request, res: Response, next: NextFunction) => {
       if (req.url.startsWith('/api')) {
