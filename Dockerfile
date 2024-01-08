@@ -10,17 +10,10 @@ RUN npm install -g @nestjs/cli cross-env
 # Copia los archivos de configuración de Yarn y workspaces
 COPY package.json yarn.lock ./
 
-
-# Copia los archivos de los workspaces y sus dependencias
-COPY apps/backend/package.json ./apps/backend/
-COPY apps/frontend/package.json ./apps/frontend/
-# Añadir más líneas de COPY si tienes más workspaces
+COPY . .
 
 # Instala las dependencias de nivel de raíz
 RUN yarn install --immutable --inline-builds
-
-# Copia el resto del código fuente
-COPY . .
 
 # Construye las aplicaciones
 RUN yarn build
