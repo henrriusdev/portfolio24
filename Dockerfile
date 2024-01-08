@@ -32,6 +32,9 @@ FROM node:18-slim AS runner
 WORKDIR /app
 
 # Copia las dependencias y los archivos de build necesarios desde la etapa de construcción
+COPY --from=builder /app/package.json ./
+COPY --from=builder /app/apps/backend/package.json ./apps/backend
+COPY --from=builder /app/apps/frontend/package.json ./apps/frontend
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/apps/backend/dist ./apps/backend/dist
 COPY --from=builder /app/apps/frontend/build ./apps/frontend/build
