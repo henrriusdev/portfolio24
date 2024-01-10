@@ -1,6 +1,6 @@
 
 import axios from "axios"
-import {debugResponse, debugRequest} from "$lib/utils/debugger"
+import {debugResponse, debugRequest} from "../utils/debugger"
 
 const client = axios.create({
   baseURL: '/api',
