@@ -26,7 +26,7 @@
       <Tooltip.Root openDelay="{100}">
 				<Tooltip.Trigger asChild let:builder={tooltipBuilder}>
 					<Button builders={[tooltipBuilder]} variant="link" class="cursor-default" size="icon">
-            <Icon src={tech.icon} class="h-7 w-7 {`text-${tech.color}-600 dark:text-${tech.color}-400`}"/>
+            <Icon src={tech.icon} class="h-7 w-7" style="color: {tech.color}"/>
           </Button>
 				</Tooltip.Trigger>
 				<Tooltip.Content>

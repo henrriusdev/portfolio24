@@ -39,8 +39,8 @@
 			content:
 				'Project for test and learn the AWS Lambda, API Gateway and Cognito Services, using Python',
 			technologies: [
-				{ icon: BrandPython, color: 'blue', name: 'Python' },
-				{ icon: BrandAws, color: 'orange', name: 'AWS' }
+				{ icon: BrandPython, color: '#55F', name: 'Python' },
+				{ icon: BrandAws, color: '#ff572b', name: 'AWS' }
 			],
 			link: 'https://github.com/hbourgeot/aws-products-restapi'
 		},
@@ -52,8 +52,8 @@
 			technologies: [
 				{ icon: Coffee, color: 'red', name: 'Java' },
 				{ icon: AppWindow, color: 'purple', name: 'JavaFX' },
-				{ icon: Leaf, color: 'green', name: 'SpringBoot' },
-				{ icon: Sql, color: 'neutral', name: 'H2 Database' }
+				{ icon: Leaf, color: '#5b5', name: 'SpringBoot' },
+				{ icon: Sql, color: 'gray', name: 'H2 Database' }
 			],
 			link: 'https://github.com/hbourgeot/inversiones7h'
 		},
@@ -62,7 +62,7 @@
 			description: 'Front-End',
 			content:
 				"Administrative System for the IUTEPAS University, made with SvelteKit, using the UI 'Skeleton '",
-			technologies: [{ icon: BrandSvelte, color: 'orange', name: 'SvelteKit' }],
+			technologies: [{ icon: BrandSvelte, color: '#ff572b', name: 'SvelteKit' }],
 			link: 'https://github.com/hbourgeot/iutepas'
 		},
 		{
@@ -70,18 +70,18 @@
 			description: 'Front-End',
 			content:
 				'System for manage IUTEPAS students grades and courses. Roles: Student, Teacher, Coordinator and Study Control',
-			technologies: [{ icon: BrandSvelte, color: 'orange', name: 'SvelteKit' }],
+			technologies: [{ icon: BrandSvelte, color: '#ff572b', name: 'SvelteKit' }],
 			link: 'https://github.com/hbourgeot/pasnotes'
 		},
 		{
 			title: 'IUTEPAS Back-End',
 			description: 'Back-End',
 			content:
-				'Storess the information for both systems in the front-end. Built with Flask and PostgreSQL',
+				'Storess the information for the Admin & Grading systems in the front-end. Built with Flask and PostgreSQL',
 			technologies: [
 				{ icon: BrandPython, color: 'blue', name: 'Python' },
 				{ icon: Pepper, color: 'gray', name: 'Flask' },
-				{ icon: Sql, color: 'neutral', name: 'PostgresSQL' }
+				{ icon: Sql, color: 'gray', name: 'PostgresSQL' }
 			],
 			link: 'https://github.com/hbourgeot/pasdmin'
 		},
@@ -91,8 +91,8 @@
 			content:
 				"Simple, snippet blog, built on Go and HTML templates, as an learning of Alex Edwards's book named Let's Go!",
 			technologies: [
-				{ icon: BrandGolang, color: 'blue', name: 'Golang' },
-				{ icon: BrandHtml5, color: 'orange', name: 'HTML' },
+				{ icon: BrandGolang, color: '#0AA', name: 'Golang' },
+				{ icon: BrandHtml5, color: '#dd461a', name: 'HTML' },
 				{ icon: Sql, color: 'neutral', name: 'MariaDB' }
 			],
 			link: 'https://github.com/hbourgeot/snippetbox'
@@ -102,10 +102,10 @@
 			description: 'Telegram Bots',
 			content:
 				'Collection of Telegram Bots maded by a telegram group, built in NestJS with Supabase Postgres Database.',
-			technologies: [
-				{ icon: SquareLetterN, color: 'pink', name: 'NestJS' },
-				{ icon: BrandSupabase, color: 'green', name: 'Supabase' },
-				{ icon: Sql, color: 'neutral', name: 'Supabase PostgreSQL' }
+				technologies: [
+					{ icon: SquareLetterN, color: '#e0234e', name: 'NestJS' },
+				{ icon: BrandSupabase, color: '#41cf91', name: 'Supabase' },
+				{ icon: Sql, color: 'gray', name: 'Supabase PostgreSQL' }
 			],
 			link: 'https://gitlab.com/fcc-coffee/nestjs-bots'
 		},
@@ -113,12 +113,37 @@
 			title: 'Quasar Form-Modal',
 			description: 'Front-End Component',
 			content:
-				'Modal component with a customizable form, provide the formFields, formData and submit function. (In progress)',
+			'Modal component with a customizable form, provide the formFields, formData and submit function. (In progress)',
 			technologies: [
 				{ icon: Settings, color: 'blue', name: 'Quasar Framework' },
-				{ icon: BrandTailwind, color: 'teal', name: 'Tailwind' }
+				{ icon: BrandTailwind, color: '#0cc', name: 'Tailwind' }
 			],
 			link: 'https://github.com/hbourgeot/formodal'
+		},
+		{
+			title: 'Restaurant API',
+			description: 'Back-End',
+			content:
+			'API for a restaurant, with the ability to manage the menu, orders and tables, for a dummy restaurant. Built with FastAPI and Supabase',
+			technologies: [
+				{ icon: BrandPython, color: 'blue', name: 'Python' },
+				{ icon: ServerBolt, color: '#019486', name: 'FastAPI' },
+				{ icon: BrandSupabase, color: '#41cf91', name: 'Supabase' },
+				{ icon: Sql, color: 'gray', name: 'Supabase PostgreSQL' }
+			],
+			link: 'https://github.com/hbourgeot/sazon-aurora-back'
+		},
+		{
+			title: 'Restaurant Website',
+			description: 'Front-End',
+			content:
+				'Website for the Restaurant API, with the ability to manage the menu, orders and tables. Built with SvelteKit and STWUI and Supabase',
+			technologies: [
+				{ icon: BrandSvelte, color: '#ff572b', name: 'SvelteKit' },
+				{ icon: BrandTailwind, color: 'teal', name: 'STWUI' },
+				{ icon: BrandSupabase, color: '#41cf91', name: 'Supabase' }
+			],
+			link: 'https://github.com/hbourgeot/sazon-aurora-front'
 		}
 	];
 </script>
@@ -182,69 +207,69 @@
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={BrandPython}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> Python
 			</p>
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={ServerBolt}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> FastAPI
 			</p>
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={BrandGolang}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> Go
 			</p>
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={BrandTypescript}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> TypeScript
 			</p>
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={BrandSvelte}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> SvelteKit
 			</p>
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={BrandVue}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> Vue
 			</p>
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={Settings}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> Quasar
 			</p>
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={HexagonLetterN}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> Node.js
 			</p>
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={SquareLetterN}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> NestJS
 			</p>
 			<p class="flex flex-col items-center justify-center">
 				<Icon
 					src={Coffee}
-					class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300"
+					class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20"
 				/> Java
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={Leaf} class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300" />
+				<Icon src={Leaf} class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20" />
 				Spring Boot
 			</p>
 			<p class="flex flex-col items-center justify-center">
-				<Icon src={Sql} class="h-16 w-16 text-neutral-500 md:h-20 md:w-20 dark:text-neutral-300" /> SQL
+				<Icon src={Sql} class="h-16 w-16 text-neutral-500 dark:text-neutral-300 md:h-20 md:w-20" /> SQL
 				& NoSQL
 			</p>
 		</div>
@@ -299,8 +324,8 @@
 		</div>
 	</section>
 	<section id="about" class="mx-auto mt-10 max-w-4xl">
-		<h2 class="text-2xl md:text-3xl max-w-2xl mx-auto">About Me</h2>
-		<div class="flex flex-col-reverse items-center justify-between md:flex-row p-2">
+		<h2 class="mx-auto max-w-2xl text-2xl md:text-3xl">About Me</h2>
+		<div class="flex flex-col-reverse items-center justify-between p-2 md:flex-row">
 			<p class="text-lg">
 				I am a highly adaptable professional, with an exceptional ability to learn and master new
 				technologies and work methods. I excel in dynamic and constantly changing environments,
@@ -309,7 +334,13 @@
 				projects. My proactive approach and creative solutions to challenges make me a valuable
 				asset to any team looking to innovate and advance their goals.
 			</p>
-			<img src={avatarImg} alt="Img" class="w-1/2 md:w-1/3 p-5 rounded-full" />
+			<img src={avatarImg} alt="Img" class="w-1/2 rounded-full p-5 md:w-1/3" />
 		</div>
 	</section>
 </div>
+
+<style>
+	:global(ol li) {
+		padding-left: 30px;
+	}
+</style>
