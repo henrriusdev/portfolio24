@@ -42,7 +42,7 @@
 				{ icon: BrandPython, color: '#55F', name: 'Python' },
 				{ icon: BrandAws, color: '#ff572b', name: 'AWS' }
 			],
-			link: 'https://github.com/hbourgeot/aws-products-restapi'
+			link: 'https://github.com/henrriusdev/aws-products-restapi'
 		},
 		{
 			title: '7H Inversions',
@@ -55,35 +55,7 @@
 				{ icon: Leaf, color: '#5b5', name: 'SpringBoot' },
 				{ icon: Sql, color: 'gray', name: 'H2 Database' }
 			],
-			link: 'https://github.com/hbourgeot/inversiones7h'
-		},
-		{
-			title: 'IUTEPAS Admin System',
-			description: 'Front-End',
-			content:
-				"Administrative System for the IUTEPAS University, made with SvelteKit, using the UI 'Skeleton '",
-			technologies: [{ icon: BrandSvelte, color: '#ff572b', name: 'SvelteKit' }],
-			link: 'https://github.com/hbourgeot/iutepas'
-		},
-		{
-			title: 'IUTEPAS Notes System',
-			description: 'Front-End',
-			content:
-				'System for manage IUTEPAS students grades and courses. Roles: Student, Teacher, Coordinator and Study Control',
-			technologies: [{ icon: BrandSvelte, color: '#ff572b', name: 'SvelteKit' }],
-			link: 'https://github.com/hbourgeot/pasnotes'
-		},
-		{
-			title: 'IUTEPAS Back-End',
-			description: 'Back-End',
-			content:
-				'Storess the information for the Admin & Grading systems in the front-end. Built with Flask and PostgreSQL',
-			technologies: [
-				{ icon: BrandPython, color: 'blue', name: 'Python' },
-				{ icon: Pepper, color: 'gray', name: 'Flask' },
-				{ icon: Sql, color: 'gray', name: 'PostgresSQL' }
-			],
-			link: 'https://github.com/hbourgeot/pasdmin'
+			link: 'https://github.com/henrriusdev/inversiones7h'
 		},
 		{
 			title: 'Snippetbox',
@@ -95,7 +67,7 @@
 				{ icon: BrandHtml5, color: '#dd461a', name: 'HTML' },
 				{ icon: Sql, color: 'neutral', name: 'MariaDB' }
 			],
-			link: 'https://github.com/hbourgeot/snippetbox'
+			link: 'https://github.com/henrriusdev/snippetbox'
 		},
 		{
 			title: 'NestJS Bots',
@@ -118,32 +90,40 @@
 				{ icon: Settings, color: 'blue', name: 'Quasar Framework' },
 				{ icon: BrandTailwind, color: '#0cc', name: 'Tailwind' }
 			],
-			link: 'https://github.com/hbourgeot/formodal'
+			link: 'https://github.com/henrriusdev/formodal'
 		},
 		{
-			title: 'Restaurant API',
-			description: 'Back-End',
-			content:
-			'API for a restaurant, with the ability to manage the menu, orders and tables, for a dummy restaurant. Built with FastAPI and Supabase',
+			title: "Mock University",
+			description: "Fullstack",
+			content: "University management system, with notes and payments, built with Go, Svelte, and PostgreSql, with SSR thanks to gonertia (inertia.js golang adapter)",
 			technologies: [
-				{ icon: BrandPython, color: 'blue', name: 'Python' },
-				{ icon: ServerBolt, color: '#019486', name: 'FastAPI' },
-				{ icon: BrandSupabase, color: '#41cf91', name: 'Supabase' },
-				{ icon: Sql, color: 'gray', name: 'Supabase PostgreSQL' }
+				{ icon: BrandGolang, color: '#0AA', name: 'Golang' },
+				{ icon: BrandSvelte, color: '#ff3e00', name: 'Svelte' },
+				{ icon: Sql, color: 'gray', name: 'PostgreSql' }
 			],
-			link: 'https://github.com/hbourgeot/sazon-aurora-back'
+			link: 'https://github.com/henrriusdev/mock_university'
 		},
 		{
-			title: 'Restaurant Website',
-			description: 'Front-End',
-			content:
-				'Website for the Restaurant API, with the ability to manage the menu, orders and tables. Built with SvelteKit and STWUI and Supabase',
+			title: "Templdais",
+			description: "Front-End",
+			content: "UI Kit of DaisyUI for Templ, a golang template engine",
 			technologies: [
-				{ icon: BrandSvelte, color: '#ff572b', name: 'SvelteKit' },
-				{ icon: BrandTailwind, color: 'teal', name: 'STWUI' },
-				{ icon: BrandSupabase, color: '#41cf91', name: 'Supabase' }
+				{ icon: BrandGolang, color: '#0AA', name: 'Golang' },
+				{ icon: BrandHtml5, color: '#dd461a', name: 'HTML' },
+				{ icon: BrandTailwind, color: '#0cc', name: 'DaisyUI' }
 			],
-			link: 'https://github.com/hbourgeot/sazon-aurora-front'
+			link: "https://github.com/henrriusdev/templdais"
+		},
+		{
+			title: "Templdais.io",
+			description: "Fullstack",
+			content: "Templdais.io is the documentation of the Templdais project, built with Templ and Go",
+			technologies: [
+				{ icon: BrandGolang, color: '#0AA', name: 'Golang' },
+				{ icon: BrandHtml5, color: '#dd461a', name: 'HTML' },
+				{ icon: BrandTailwind, color: '#0cc', name: 'Tailwind' }
+			],
+			link: "https://templdais-io.fly.dev/"
 		}
 	];
 </script>
@@ -175,7 +155,7 @@
 			<Badge variant="outline">
 				<a
 					class="flex gap-x-2 text-neutral-600 transition-colors hover:text-neutral-300"
-					href="https://BrandGithub.com/hbourgeot"
+					href="https://BrandGithub.com/henrriusdev"
 					target="_blank"
 				>
 					<Icon src={BrandGithub} class="h-5 w-5" /> Github
@@ -184,7 +164,7 @@
 			<Badge variant="outline">
 				<a
 					class="flex gap-x-2 text-neutral-600 transition-colors hover:text-neutral-300"
-					href="https://Brandlinkedin.com/in/hbourgeotjr"
+					href="https://Brandlinkedin.com/in/henrriusdevjr"
 					target="_blank"
 				>
 					<Icon src={BrandLinkedin} class="h-5 w-5" /> Linkedin
@@ -278,7 +258,18 @@
 		<h2 class="text-2xl md:text-3xl">Experience</h2>
 
 		<Timeline order="vertical" class="my-8 max-w-[65ch]">
-			<TimelineItem title="Developer at Linktic" date="December 5, 2022 - Current">
+			<TimelineItem title="Back-End developer at Sera">
+				<svelte:fragment slot="icon">
+					<span
+						class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 ring-8 ring-white dark:bg-orange-600 dark:ring-gray-900"
+					>
+						<Icon src={Calendar} class="text-primary-600 dark:text-primary-400 h-4 w-4" />
+					</span>
+				</svelte:fragment>
+				<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+					Currently I am working as a Back-End developer at Sera, a fintech company, where I am developing a back-end in Golang. The project is a financial aid and analysis for manage your spendings and savings, and also have better control of your money and more credits for your credit card.
+			</TimelineItem>
+			<TimelineItem title="Developer at Linktic" date="December 5, 2022 - August 1, 2024">
 				<svelte:fragment slot="icon">
 					<span
 						class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 ring-8 ring-white dark:bg-orange-600 dark:ring-gray-900"

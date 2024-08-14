@@ -11,7 +11,7 @@
 		{ label: 'Experience', href: '#experience' },
 		{ label: 'Projects', href: '#projects' },
 		{ label: 'About me', href: '#about' },
-		{ label: 'Blog', href: '/blog' }
+		{ label: 'Blog', href: 'https://publish.obsidian.md/henrriusdev' }
 	];
 
 	let open: boolean = false;
