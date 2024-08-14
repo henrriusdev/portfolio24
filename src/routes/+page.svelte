@@ -155,7 +155,7 @@
 			<Badge variant="outline">
 				<a
 					class="flex gap-x-2 text-neutral-600 transition-colors hover:text-neutral-300"
-					href="https://BrandGithub.com/henrriusdev"
+					href="https://github.com/henrriusdev"
 					target="_blank"
 				>
 					<Icon src={BrandGithub} class="h-5 w-5" /> Github
@@ -164,7 +164,7 @@
 			<Badge variant="outline">
 				<a
 					class="flex gap-x-2 text-neutral-600 transition-colors hover:text-neutral-300"
-					href="https://Brandlinkedin.com/in/henrriusdevjr"
+					href="https://linkedin.com/in/hbourgeotjr"
 					target="_blank"
 				>
 					<Icon src={BrandLinkedin} class="h-5 w-5" /> Linkedin
@@ -173,7 +173,7 @@
 			<Badge variant="outline">
 				<a
 					class="flex gap-x-2 text-neutral-600 transition-colors hover:text-neutral-300"
-					href="mailto:henrrybrgt@gmail.com"
+					href="mailto:henrry.geek@gmail.com"
 					target="_blank"
 				>
 					<Icon src={Mail} class="h-5 w-5" /> Mail
