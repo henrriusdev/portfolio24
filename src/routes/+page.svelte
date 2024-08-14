@@ -140,14 +140,14 @@
 			<span class="text-red-500 dark:text-red-300">+1 year of experience.</span>
 			<span>Fullstack developer and content creator.</span>
 			<span class="text-blue-500 dark:text-blue-300"
-				>Specialized in Back-End applications and PENS Stack</span
+				>Specialized in Back-End applications and PEGS Stack</span
 			>
 		</p>
 		<div class="flex flex-wrap justify-start gap-3">
 			<Badge variant="default" class="bg-blue-400">PostgreSQL</Badge>
-			<Badge variant="default" class="bg-slate-500">Express.js</Badge>
-			<Badge variant="default" class="bg-red-400">NestJS</Badge>
-			<Badge variant="default" class="bg-orange-500">SvelteKit</Badge>
+			<Badge variant="default" class="bg-lime-600">Echo</Badge>
+			<Badge variant="default" class="bg-blue-400">Golang</Badge>
+			<Badge variant="default" class="bg-orange-500">Svelte</Badge>
 		</div>
 		<Separator class="my-3 max-w-xl" />
 		<p class="my-1 mb-2 text-lg">Contact me</p>
