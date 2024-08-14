@@ -94,8 +94,8 @@
 		},
 		{
 			title: "Mock University",
-			description: "Fullstack",
-			content: "University management system, with notes and payments, built with Go, Svelte, and PostgreSql, with SSR thanks to gonertia (inertia.js golang adapter)",
+			description: "Fullstack (WIP)",
+			content: "University management system, built with Go, Svelte, and PostgreSql, with SSR thanks to gonertia (inertia.js golang adapter)",
 			technologies: [
 				{ icon: BrandGolang, color: '#0AA', name: 'Golang' },
 				{ icon: BrandSvelte, color: '#ff3e00', name: 'Svelte' },
@@ -105,7 +105,7 @@
 		},
 		{
 			title: "Templdais",
-			description: "Front-End",
+			description: "UI Kit",
 			content: "UI Kit of DaisyUI for Templ, a golang template engine",
 			technologies: [
 				{ icon: BrandGolang, color: '#0AA', name: 'Golang' },
